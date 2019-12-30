@@ -6,8 +6,8 @@ void fun(int i){
 
 	if(i>0){
 	
-	cout<<i<<endl;
 	fun(i-1);
+	cout<<i<<endl;
 
 	}
 
