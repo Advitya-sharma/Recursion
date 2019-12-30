@@ -2,6 +2,8 @@
 
 using namespace std;
 
+//commands are left to be executed after the recursive call
+
 void fun(int i){
 
 	if(i>0){

@@ -3,13 +3,13 @@
 using namespace std;
 
 
-int sum(int i){
+int factoril(int i){
 
-if(i==0){
-	return 0;
+if(i==1){
+	return 1;
 }
 else{
-	return sum(i-1)+i;
+	return factoril(i-1)*i;
 }
 
 }
@@ -19,6 +19,6 @@ int main(){
 
 	int x;
 	cin>>x;
-	cout<<sum(x);
+	cout<<factoril(x);
 
 }
