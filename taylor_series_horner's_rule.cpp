@@ -5,17 +5,14 @@ using namespace std;
 
 double taylor(double x,double n){
 
-static double p=1,f=1;
-double r=0;
+static double s=1;
 if(n==0){
-	return 1;
+	return s;
 }
 else{
 
-	r=taylor(x,n-1);
-	p=p*x;
-	f=f*n;
-	return r+p/f;
+	s = 1+x/n*s;
+	return taylor(x,n-1);
 }
 
 }
